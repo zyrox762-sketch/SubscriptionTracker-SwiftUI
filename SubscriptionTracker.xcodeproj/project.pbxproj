@@ -11,6 +11,12 @@
 		1CA1D486306671CB00D1B665 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D485306671CB00D1B665 /* ContentView.swift */; };
 		1CA1D488306671CD00D1B665 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1D487306671CD00D1B665 /* Assets.xcassets */; };
 		1CA1D48B306671CD00D1B665 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1D48A306671CD00D1B665 /* Preview Assets.xcassets */; };
+		1CA1D4953066720A00D1B665 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D4943066720900D1B665 /* Subscription.swift */; };
+		1CA1D4973066721D00D1B665 /* SubscriptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D4963066721D00D1B665 /* SubscriptionViewModel.swift */; };
+		1CA1D4993066722A00D1B665 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D4983066722A00D1B665 /* HomeView.swift */; };
+		1CA1D49B3066724000D1B665 /* SubscriptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D49A3066724000D1B665 /* SubscriptionRowView.swift */; };
+		1CA1D49D3066725000D1B665 /* AddSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D49C3066725000D1B665 /* AddSubscriptionView.swift */; };
+		1CA1D49F3066726700D1B665 /* EditSubscriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1D49E3066726700D1B665 /* EditSubscriptionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,12 @@
 		1CA1D485306671CB00D1B665 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1CA1D487306671CD00D1B665 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1CA1D48A306671CD00D1B665 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1CA1D4943066720900D1B665 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		1CA1D4963066721D00D1B665 /* SubscriptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewModel.swift; sourceTree = "<group>"; };
+		1CA1D4983066722A00D1B665 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1CA1D49A3066724000D1B665 /* SubscriptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionRowView.swift; sourceTree = "<group>"; };
+		1CA1D49C3066725000D1B665 /* AddSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddSubscriptionView.swift; sourceTree = "<group>"; };
+		1CA1D49E3066726700D1B665 /* EditSubscriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSubscriptionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +63,9 @@
 		1CA1D482306671CB00D1B665 /* SubscriptionTracker */ = {
 			isa = PBXGroup;
 			children = (
+				1CA1D493306671EF00D1B665 /* ViewModel */,
+				1CA1D492306671EA00D1B665 /* View */,
+				1CA1D491306671E200D1B665 /* Model */,
 				1CA1D483306671CB00D1B665 /* SubscriptionTrackerApp.swift */,
 				1CA1D485306671CB00D1B665 /* ContentView.swift */,
 				1CA1D487306671CD00D1B665 /* Assets.xcassets */,
@@ -65,6 +80,33 @@
 				1CA1D48A306671CD00D1B665 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1CA1D491306671E200D1B665 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1CA1D4943066720900D1B665 /* Subscription.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CA1D492306671EA00D1B665 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CA1D4983066722A00D1B665 /* HomeView.swift */,
+				1CA1D49A3066724000D1B665 /* SubscriptionRowView.swift */,
+				1CA1D49C3066725000D1B665 /* AddSubscriptionView.swift */,
+				1CA1D49E3066726700D1B665 /* EditSubscriptionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CA1D493306671EF00D1B665 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CA1D4963066721D00D1B665 /* SubscriptionViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA1D4953066720A00D1B665 /* Subscription.swift in Sources */,
 				1CA1D486306671CB00D1B665 /* ContentView.swift in Sources */,
+				1CA1D49D3066725000D1B665 /* AddSubscriptionView.swift in Sources */,
+				1CA1D49F3066726700D1B665 /* EditSubscriptionView.swift in Sources */,
+				1CA1D49B3066724000D1B665 /* SubscriptionRowView.swift in Sources */,
 				1CA1D484306671CB00D1B665 /* SubscriptionTrackerApp.swift in Sources */,
+				1CA1D4993066722A00D1B665 /* HomeView.swift in Sources */,
+				1CA1D4973066721D00D1B665 /* SubscriptionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
